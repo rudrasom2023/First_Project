@@ -1,0 +1,131 @@
+html {
+    height: 100%; /* Ensure the HTML element fills the entire viewport */
+  }
+
+body {
+    background-image: url("back.jpg"); /* Replace with your image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* Make the body element also fill the entire viewport */
+    min-height: 100vh; /* Ensure minimum height even if content is less */
+  }  
+
+.about-hero {
+    height: 500px; /* Adjust as needed */
+    background-attachment: fixed; /* Optional: Create a parallax effect */
+
+  }
+  .hero-text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.519);
+    height: auto;
+    width: 900px;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+  }
+  /* In your abou.css file */
+.about-content {
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    right: 5%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    padding: 10px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
+  
+  .content-wrapper {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .about-hero {
+    display: flex; /* Align elements horizontally */
+    justify-content: center; /* Center content within the section */
+    align-items: center; /* Align elements vertically */
+    height: 500px; /* Adjust as needed */
+  }
+  header {
+    position: relative;
+  }
+  
+  .hero-logo-box {
+    position: absolute;
+    top: 10%; /* Position 50% from the top of the header */
+    left: 50%; /* Position 50% from the left of the header */
+    transform: translate(-50%, -50%); /* Center within the header */
+    width: 100px;
+    height: 100px;
+    background-color: #0000007e; /* White background for logo */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  }
+  
+  .hero-logo-box img {
+    max-width: 100%; /* Ensure image fits within the box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Optional: Fill the box while preserving aspect ratio */
+  }  
+
+  .explore-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #about-content-dialog {
+    display: none; /* Hide the dialog box initially */
+    /* position: fixed;  */
+    width: 1200px; /* Adjust as needed */
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the dialog box */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 0;
+    padding: 6px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* Base styles for all screens */
+.about-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  /* Styles for smaller screens (e.g., mobile) */
+  @media (max-width: 768px) {
+    .about-hero {
+      height: 300px; /* Adjust for smaller screens */
+    }
+  
+    .about-content-dialog {
+      width: 90%; /* Widen for better viewing on mobile */
+    }
+  }
+  
+  /* Styles for larger screens (e.g., desktop) */
+  @media (min-width: 768px) {
+    .about-hero {
+      height: 600px; /* Adjust for larger screens */
+    }
+  
+    .about-content-dialog {
+      width: 40%; /* Adjust for desktop viewport */
+    }
+  }
+  
